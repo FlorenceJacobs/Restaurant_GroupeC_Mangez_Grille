@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+     <!-- DEBUT de navigation -->
+     <div class="container-fluid">
+        <div class="row">
+            <nav class="col navbar navbar-expand-md navbar-layout px-md-5">
+                <a class="navbar-brand" href="accueil.html">
+                    <img src="assets/img/logo_blc_mangez_grille.png" width="150" alt="Mangez grillé">
+                    <!-- titre du site si besoin -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarContent" class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">La carte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerie.html">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="restaurants.html">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="form-inline d-none d-md-inline-block">
+                    <button class="btn btn-outline-light btn-navbar" type="button">Réservez</button>
+                </form>
+            </nav>
+        </div>
+    </div>
+    <!-- FIN de navigation -->
+    <div class="container">
+        <div class="row">
+                <div class="col-md-2 col-4 offset-md-2">
+                    <a class="menu-animation" href="#menu-insecte">Menu Insecte</a>
+                </div>
+                <div class="col-md-2 col-4 offset-md-1">
+                    <a href="#menu-barbecue">Menu Barbecue</a>
+                </div>
+                <div class="col-md-2 col-4 offset-md-1">
+                    <a href="#menu-nouille">Menu Nouilles</a>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-fluid">
+                <div class="row p-2">
+                    <div class="col-md-12 col-12">
+                        <p id="menu-insecte">
+                        Menu Insecte
+                        <span class="badge badge-dark badge-pill m-3">20€</span>
+                        </p>
+                    </div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item bg-secondary text-white d-flex justify-content-between align-items-center">
+                        <p class="entre">
+                            Tapas de scarabées
+                        <span class="badge badge-info badge-pill m-2">7€</span>
+                        </p>
+                        <img src="assets/img/tapas.jpg" class="rounded float-right" alt="tapas de scarabées">
+                    </li>
+                    <li class="list-group-item bg-secondary text-white d-flex justify-content-between align-items-center">
+                        <p class="plat">
+                            Tacos de crevettes aux piments et criquets
+                        
+                            <span class="badge badge-info badge-pill m-2">13€</span>
+                        </p>
+                    </li>
+                    <li class="list-group-item bg-secondary text-white d-flex justify-content-between align-items-center">
+                        <p class="dessert">
+                            Beignets aux grillons
+                        <span class="badge badge-info badge-pill m-2">7€</span>
+                        </p> 
+                    </li>
+                </ul>
+        </div>
+
+        <div class="container-fluid">
+            <div class="myback">
+                <div class="row p-2">
+                    <div class="col-md-12 col-12">
+                        <p id="menu-barbecue">
+                            Menu barbecue
+                        <span class="badge badge-dark badge-pill m-3">25€</span>
+                        </p>
+                    </div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item bg-secondary text-white d-flex justify-content-between align-items-center">
+                        <p class="entre">
+                            Tartines Estivale
+                            <span class="badge badge-info badge-pill m-2">7€</span>
+                        </p>
+                    <img src="assets/img/tartine estival.jpg" class="rounded float-right" alt="tartines estivale">
+                    </li>
+                    <li class="list-group-item bg-secondary text-white d-flex justify-content-between align-items-center">
+                        <p class="plat">
+                            Brochettes de porc aux petits légumes, crème de pois chiches
+                            <span class="badge badge-info badge-pill m-2">17€</span>
+                        </p>
+                    </li>
+                    <li class="list-group-item bg-secondary text-white d-flex justify-content-between align-items-center">
+                        <p class="dessert">
+                            bananes grillé au chocolat accompagné de sa boule vanille
+                            <span class="badge badge-info badge-pill m-2">6€</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="myback">
+                <div class="row p-2">
+                    <div class="col-md-12 col-12">
+                        <p id="menu-nouille">
+                            Menu Nouilles
+                            <span class="badge badge-dark badge-pill m-3">23€</span>
+                        </p>
+                    </div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item bg-secondary text-white d-flex justify-content-between align-items-center">
+                        <p class="entre">
+                            Salade de nouilles soba, concombre et hareng doux au sésame
+                            <span class="badge badge-info badge-pill m-2">7€</span>
+                        </p>
+                    </li>
+                    <li class="list-group-item bg-secondary text-white d-flex justify-content-between align-items-center">
+                        <p class="plat">
+                            Gratin de nouilles
+                            <span class="badge badge-info badge-pill m-2">15€</span>
+                        </p>
+                    </li>
+                    <li class="list-group-item bg-secondary text-white d-flex justify-content-between align-items-center">
+                        <p class="dessert">
+                            Arachides et nouilles chinoises sèches enrobées de chocolat
+                            <span class="badge badge-info badge-pill m-2">6€</span>
+                        </p>
+                    <img src="assets/img/nouille-choco.jpeg" class="rounded float-right" alt="nouille au chocolat">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+    
+
+    
+</body>
+</html>
