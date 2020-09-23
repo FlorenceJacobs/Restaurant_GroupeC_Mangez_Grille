@@ -2,7 +2,7 @@ body{
     text-align: center;
     background-color: gray;
     
-    a{
+    a.menu-animation{
         text-align: center;
         color: black;
         background-color: white;
@@ -10,8 +10,8 @@ body{
         width: 50%;
     }
 
-    a:hover{
-        background-color: #b2671c;
+    a.menu-animation:hover{
+        background-color: #F8121D;
         color: white;
         width: 75%;
         transform: translate(4em,0)
@@ -31,16 +31,17 @@ body{
     }
 
     .myback{
-        background-color: #b2671c;
+        background-color: #581F18;
+        color: white;
     }
 
-    img{
+    img.myanimation{
         height: 30%;
         width: 30%;
         transition: all 1s ease-in-out;
     }
 
-    img:hover{
+    img.myanimation:hover{
         transform: scale(1.1,) rotate(0.01turn);
     }
 }
