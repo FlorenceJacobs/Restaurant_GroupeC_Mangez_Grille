@@ -1,4 +1,3 @@
-@import "../css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rye&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 
@@ -39,10 +38,10 @@ a:hover {
 }
 
 /* SCSS Imports */
-@import "./nav.scss";
-@import "./accueil.scss";
-@import "./menu.scss";
-@import "./galerie.scss";
-@import "./restaurants.scss";
-@import "./contact.scss";
-@import "./footer.scss";
+@import "nav";
+@import "accueil";
+@import "menu";
+@import "galerie";
+@import "restaurants";
+@import "contact";
+@import "footer";

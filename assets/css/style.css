@@ -1,4 +1,3 @@
-@import "../css/bootstrap.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rye&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 /* Colors */
@@ -211,6 +210,16 @@ i.arrow-effect {
   width: 100%;
   bottom: 0;
   background-color: #3838389f;
+}
+
+.img-bg-contact, .bg-test-contact {
+  position: relative;
+  background-image: url(../img/restaurant-charleroi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .footer {
