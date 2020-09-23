@@ -1,9 +1,9 @@
-.img-contact-form img {
+.bg-contact-form {
     position: relative;
     background-image: url(../img/restaurant-charleroi.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+}
+.form-group-bg-height{
+    height: 100vh;
 }
