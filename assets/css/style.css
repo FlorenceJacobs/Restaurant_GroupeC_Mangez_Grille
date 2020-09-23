@@ -30,28 +30,39 @@ a:hover {
 }
 
 nav .navbar-nav li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
+
 nav .navbar-nav li a {
   position: relative;
   color: white !important;
-  font-family: "Rye", cursive;
+  font-family: 'Rye', cursive;
   letter-spacing: 0.1rem;
 }
+
 nav .navbar-nav li a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%) scaleX(0);
-  transform-origin: 50% 50%;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   width: 100%;
   height: 2px;
   background-color: white;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
   transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
 }
+
 nav .navbar-nav li a:hover::after {
-  transform: translateX(-50%) scaleX(1);
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
 }
 
 .btn-navbar:hover, .btn-navbar:focus, .btn-navbar:active {
@@ -81,8 +92,10 @@ nav .navbar-nav li a:hover::after {
 
 span.block-reveal {
   opacity: 0;
-  animation: appear-text 0.0001s linear forwards;
-  animation-delay: 0.5s;
+  -webkit-animation: appear-text 0.0001s linear forwards;
+          animation: appear-text 0.0001s linear forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .block-reveal::after {
@@ -93,8 +106,25 @@ span.block-reveal {
   width: 0%;
   height: 100%;
   background: #F8121D;
-  animation: block-reveal 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  animation-delay: 0.4s;
+  -webkit-animation: block-reveal 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          animation: block-reveal 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes block-reveal {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
 }
 
 @keyframes block-reveal {
@@ -111,6 +141,16 @@ span.block-reveal {
     width: 0;
   }
 }
+
+@-webkit-keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes appear-text {
   0% {
     opacity: 0;
@@ -119,13 +159,16 @@ span.block-reveal {
     opacity: 1;
   }
 }
+
 span.block-reveal-2 {
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .block-reveal-2.block-reveal::after {
   background-color: #F8121D;
-  animation-delay: 2.4s;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
 }
 
 .promo {
@@ -145,27 +188,39 @@ span.block-reveal-2 {
   position: absolute;
   overflow: hidden;
   top: 0;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
   transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
   z-index: -1;
 }
 
 .link-page-1:hover .promo-block-appear {
-  transform: translateY(400px);
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
   z-index: 1;
 }
 
 .call-to-see-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #F8121D;
 }
 
 .arrow-effect {
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
   transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
 .link-page-2:hover .arrow-effect {
-  transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
 }
 
 i.arrow-effect {
@@ -195,14 +250,15 @@ i.arrow-effect {
 }
 
 .actualite-text-block:before {
-  content: "";
+  content: '';
   position: absolute;
   top: -3%;
   right: 12%;
   width: 150%;
   height: 175%;
   border-radius: 100%;
-  box-shadow: 0px 0px 0px 400px #F8121D;
+  -webkit-box-shadow: 0px 0px 0px 400px #F8121D;
+          box-shadow: 0px 0px 0px 400px #F8121D;
 }
 
 .actualite-headings {
@@ -210,6 +266,57 @@ i.arrow-effect {
   width: 100%;
   bottom: 0;
   background-color: #3838389f;
+}
+
+body {
+  text-align: center;
+  background-color: gray;
+}
+
+body a.menu-animation {
+  text-align: center;
+  color: black;
+  background-color: white;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  width: 50%;
+}
+
+body a.menu-animation:hover {
+  background-color: #F8121D;
+  color: white;
+  width: 75%;
+  -webkit-transform: translate(4em, 0);
+          transform: translate(4em, 0);
+}
+
+body #menu-insecte {
+  text-transform: uppercase;
+}
+
+body #menu-barbecue {
+  text-transform: uppercase;
+}
+
+body #menu-nouille {
+  text-transform: uppercase;
+}
+
+body .myback {
+  background-color: #581F18;
+  color: white;
+}
+
+body img.myanimation {
+  height: 30%;
+  width: 30%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+body img.myanimation:hover {
+  -webkit-transform: scale(1.1) rotate(0.01turn);
+          transform: scale(1.1) rotate(0.01turn);
 }
 
 .img-bg-contact, .bg-test-contact {
