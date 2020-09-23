@@ -270,13 +270,14 @@ i.arrow-effect {
 
 .mybc {
   text-align: center;
-  background-color: gray;
+  background-color: #202c5946;
 }
 
 .mybc a.menu-animation {
   text-align: center;
+  padding: .5em;
   color: black;
-  background-color: white;
+  background-color: #202c5946;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   width: 50%;
@@ -319,7 +320,7 @@ i.arrow-effect {
           transform: scale(1.1) rotate(0.01turn);
 }
 
-.bg-contact-form {
+.img-contact-form img {
   position: relative;
   background-image: url(../img/restaurant-charleroi.jpg);
   background-repeat: no-repeat;
@@ -327,10 +328,6 @@ i.arrow-effect {
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-
-.contact-form-float {
-  position: absolute;
 }
 
 .footer {
