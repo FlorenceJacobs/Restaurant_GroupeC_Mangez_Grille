@@ -268,21 +268,22 @@ i.arrow-effect {
   background-color: #3838389f;
 }
 
-body {
+.mybc {
   text-align: center;
-  background-color: gray;
+  background-color: #202c5946;
 }
 
-body a.menu-animation {
+.mybc a.menu-animation {
   text-align: center;
+  padding: .5em;
   color: black;
-  background-color: white;
+  background-color: #202c5946;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   width: 50%;
 }
 
-body a.menu-animation:hover {
+.mybc a.menu-animation:hover {
   background-color: #F8121D;
   color: white;
   width: 75%;
@@ -290,36 +291,36 @@ body a.menu-animation:hover {
           transform: translate(4em, 0);
 }
 
-body #menu-insecte {
+.mybc #menu-insecte {
   text-transform: uppercase;
 }
 
-body #menu-barbecue {
+.mybc #menu-barbecue {
   text-transform: uppercase;
 }
 
-body #menu-nouille {
+.mybc #menu-nouille {
   text-transform: uppercase;
 }
 
-body .myback {
+.mybc .myback {
   background-color: #581F18;
   color: white;
 }
 
-body img.myanimation {
+.mybc img.myanimation {
   height: 30%;
   width: 30%;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
-body img.myanimation:hover {
+.mybc img.myanimation:hover {
   -webkit-transform: scale(1.1) rotate(0.01turn);
           transform: scale(1.1) rotate(0.01turn);
 }
 
-.img-bg-contact, .bg-test-contact {
+.img-contact-form img {
   position: relative;
   background-image: url(../img/restaurant-charleroi.jpg);
   background-repeat: no-repeat;
